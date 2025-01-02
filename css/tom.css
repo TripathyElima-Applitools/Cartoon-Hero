@@ -1,35 +1,33 @@
 body{
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 30px;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 header{
-    background-color: #35d1cc;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  background-color: #35d1cc;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 header h1{
-    color: rgb(134, 46, 46);
-    font-size:  50px;
+  color: rgb(134, 46, 46);
+  font-size: 50px;
 }
 header img{
-    border-radius: 170px;
-    width: 300px;
-    border: 20px solid white
+  border-radius: 170px;
+  width: 300px;
+  border: 20px solid white 
 }
-.tom
-{
-float: right;
-width:300px;
-height:300px;
+.tom {
+  float: right;
+  width:300px;
+  height:300px;
 }
-.jerry
-{
-float: left;
-width:300px;
-height:300px;
+.jerry {
+  float: left;
+  width:300px;
+  height:300px;
 }
 h1, h2 {
   font-family: 'Roboto', sans-serif;
@@ -66,3 +64,59 @@ iframe {
   border: none;
   border-radius: 15px;
 }
+p.caption {
+  color: #999999;
+  font-style: italic;
+  margin-top: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ /* You can adjust the width */
+}
+.left, .right {
+  width: 45%;
+ /* Adjust width as needed */
+}
+ol {
+  padding-left: 20px;
+}
+
+a{
+  color:#35d1cc;
+}
+a:hover{
+  color: white;
+  background-color: #483a94;
+}
+footer{
+  width: 100%;
+  background-color: #35d1cc;
+  text-align: center;
+  color: rgb(134, 46, 46);;
+  padding: 50px; /* Adjust padding as needed */
+  position: relative; /* This ensures the footer stays at the bottom if needed */
+  bottom: 0; /* Stick it to the bottom of the page if necessary */
+}
+footer p{
+  margin: 0
+}
+footer a {
+  color: rgb(134, 46, 46);;
+}
+
+footer a hover{
+  opacity: 5;
+  background-color: transparent;
+
+}
+p.caption
+{
+  color: #999999;
+  font-style: italic;
+  margin-top: 0;
+} 
+
+
+
