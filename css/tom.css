@@ -143,6 +143,11 @@ p.caption
   width: 300px;  /* Adjust size of the logos */
   height: auto;
 }
+main img{
+  border-radius: 170px;
+  width: 300px;
+  border: 20px solid white 
+}
 
 
 
