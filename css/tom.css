@@ -115,6 +115,36 @@ p.caption
   font-style: italic;
   margin-top: 0;
 } 
+/* Flex container to align items horizontally */
+.image-container {
+  display: flex;
+  align-items: center;  /* Vertically center the items (logos and image) */
+  justify-content: center; /* Horizontally center the container */
+  position: relative;
+  width: 100%;
+  height: 50vh;  /* Full viewport height */
+}
+/* Styling for logos */
+.logo {
+  display: block;
+  cursor: pointer;
+  top: 60%;  /* Vertically center the logos */
+
+}
+/* Position left logo to the left */
+.left {
+  margin-right: 40px;  /* Add space between left logo and the central image */
+}
+/* Position right logo to the right */
+.right {
+  margin-left: 40px;  /* Add space between right logo and the central image */
+}
+.logo img {
+  width: 300px;  /* Adjust size of the logos */
+  height: auto;
+}
+
+
 
 
 
