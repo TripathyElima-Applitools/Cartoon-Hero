@@ -1,8 +1,12 @@
 body{
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 30px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
 }
 header{
   background-color: #35d1cc;
@@ -43,13 +47,6 @@ main{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-}
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
 }
 .video-container {
   margin: 50px auto;
@@ -140,62 +137,52 @@ p.caption
   margin-left: 40px;  /* Add space between right logo and the central image */
 }
 .logo img {
-  width: 300px;  /* Adjust size of the logos */
-  height: auto;
+  border-radius: 170px;
+  width: 300px;
+  border: 20px solid white 
 }
 main img{
   border-radius: 170px;
   width: 300px;
   border: 20px solid white 
 }
-html, body {
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scrolling */
 }
-/* Make the navbar fixed at the top */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333; /* Dark background for the navbar */
-  color: white;
-  padding: 10px 0;
-  z-index: 1000; /* Ensures the navbar stays on top of other content */
-  box-shadow: 0 4px 2px -2px gray; /* Optional: adds shadow to navbar */
+/* Navigation Bar Styling */
+nav {
+  position: fixed; /* Fix the nav bar to the top of the screen */
+  top: 0; /* Ensure it stays at the top */
+  left: 0; /* Align to the left side */
+  width: 100%; /* Make it full width */
+  background-color: #333; /* Dark background */
+  padding: 10px 0; /* Some padding to give it space */
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
-
-.navbar ul {
-  list-style-type: none;
+/* Navigation links styling */
+nav ul {
+  list-style-type: none; /* Remove default list styling */
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex; /* Align links horizontally */
+  justify-content: center; /* Center align the navigation items */
 }
-
-.navbar ul li {
-  display: inline;
-  margin: 0 15px;
+nav ul li {
+  margin: 0 20px; /* Spacing between menu items */
 }
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+nav ul li a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underlines */
+  font-size: 18px; /* Font size for the nav items */
+  padding: 5px 15px; /* Padding for clickable area */
+  display: inline-block; /* Make sure the anchor is an inline-block element */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
-
-.navbar ul li a:hover {
-  color: #FFD700; /* Change color when hovered */
+nav ul li a:hover {
+  background-color: #483a94; /* Darken the background color on hover */
+  border-radius: 5px; /* Optional: Rounded corners on hover */
 }
-
-/* Add padding to the body so content isn't hidden under the fixed navbar */
-body {
-  padding-top: 60px; /* Adjust the value based on the height of your navbar */
-}
-
-
-
-
 
 

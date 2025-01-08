@@ -3,89 +3,100 @@
   <head>
     <title>Tom and Jerry</title>
     <!-- webpage title -->
-    <link rel="icon" href="img/PictureForTom&Jerry.jpg" alt="Icon showing Tom and Jerry characters from the animated series">
+    <link rel="icon" href="img/PictureForTom&Jerry.jpg" alt="Tom and Jerry Icon">
     <!-- webpage tab icon -->
     <link rel="stylesheet" type="text/css" href="css/tom.css">
-    <!-- Google Fonts -->
+    <!-- css file contains style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Fixed Navigation Header -->
-    <nav class="navbar">
+    <!-- Navigation Bar -->
+    <nav>
       <ul>
         <li><a href="#about">About Tom and Jerry</a></li>
-        <li><a href="#funny-moment">Funny Moment</a></li>
+        <li><a href="#video">Tom and Jerry Funny Moment</a></li>
         <li><a href="#characteristics">Characteristics</a></li>
       </ul>
     </nav>
 
-    <!-- Main Content -->
-    <header>
-      <img src="img/PictureForTom&Jerry.jpg" alt="Tom and Jerry promotional image featuring both characters">
-      <img src="img/PictureForTom.jpg" class="tom" alt="Tom the cat, known for his mischievous attempts to catch Jerry in the animated series">
-      <img src="img/PictureForJerry.jpg" class="jerry" alt="Jerry the mouse, known for outsmarting Tom in their comedic chase sequences">
+    <!-- Header element -->
+    <header id="about">
+      <img src="img/PictureForTom&Jerry.jpg" alt="Tom and Jerry Image Header">
+      <img src="img/PictureForTom.jpg" class="tom" alt="Tom, the cat from Tom and Jerry">
+      <img src="img/PictureForJerry.jpg" class="jerry" alt="Jerry, the mouse from Tom and Jerry">
       <h1>TOM AND JERRY</h1>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-      <h1>About Tom and Jerry</h1>
-      <p>My 4-year-old son is absolutely convinced that Tom and Jerry are not just cartoon characters but real, flesh-and-fur citizens of the USA. According to his detailed (and suspiciously well-thought-out) theory, they live in a sprawling suburban mansion, complete with a garage full of tiny sports cars for their high-speed chases. He’s pretty sure they hang out in a neighborhood where Bugs Bunny mows the lawn, Scooby-Doo hosts BBQs, and Daffy Duck argues over HOA fees. Honestly, if this place exists, I might just pack up and move there—at least their drama sounds more entertaining than ours!</p>
-    </section>
+    <!-- Main element -->
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h1>About Tom and Jerry</h1>
+        <p>My 4-year-old son is absolutely convinced that Tom and Jerry are not just cartoon characters but real, flesh-and-fur citizens of the USA. According to his detailed (and suspiciously well-thought-out) theory, they live in a sprawling suburban mansion, complete with a garage full of tiny sports cars for their high-speed chases. He’s pretty sure they hang out in a neighborhood where Bugs Bunny mows the lawn, Scooby-Doo hosts BBQs, and Daffy Duck argues over HOA fees. Honestly, if this place exists, I might just pack up and move there—at least their drama sounds more entertaining than ours!</p>
+      </section>
 
-    <!-- Funny Moment Section -->
-    <section id="funny-moment">
-      <h2>Tom and Jerry Funny Moment</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/ND7DSjFbNto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="image-container">
-        <a target="_blank" href="https://www.amazon.ca/Trends-International-Jerry-Standard-Sticker/dp/B08XYC115D/ref=pd_day0_d_sccl_2_3/140-6730906-5799816?pd_rd_w=HFpwF&content-id=amzn1.sym.a0f07c06-3bfe-427e-9527-5be8cea27b66&pf_rd_p=a0f07c06-3bfe-427e-9527-5be8cea27b66&pf_rd_r=HDG60ZYNM8DJWVSKF9D8&pd_rd_wg=19jsh&pd_rd_r=fca71f5c-c09c-433a-8c8a-7cfbfa714854&pd_rd_i=B08XYC115D&psc=1" class="logo left">
-          <img src="img/PictureForTom&JerryStickers.jpg" alt="Tom and Jerry-themed sticker featuring the iconic duo with fun expressions">
-        </a>
-    
-        <div class="center-image">
+      <!-- Funny Moment Section -->
+      <section id="video">
+        <h2>Tom and Jerry Funny Moment</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/ND7DSjFbNto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <!-- Image Container Section -->
+      <section id="image-container">
+        <div class="image-container">
+          <!-- Left logo/link -->
+          <a target="_blank" href="https://www.amazon.ca/Trends-International-Jerry-Standard-Sticker/dp/B08XYC115D/ref=pd_day0_d_sccl_2_3/140-6730906-5799816?pd_rd_w=HFpwF&content-id=amzn1.sym.a0f07c06-3bfe-427e-9527-5be8cea27b66&pf_rd_p=a0f07c06-3bfe-427e-9527-5be8cea27b66&pf_rd_r=HDG60ZYNM8DJWVSKF9D8&pd_rd_wg=19jsh&pd_rd_r=fca71f5c-c09c-433a-8c8a-7cfbfa714854&pd_rd_i=B08XYC115D&psc=1" class="logo left">
+            <img src="img/PictureForTom&JerryStickers.jpg" alt="Tom and Jerry Sticker">
+          </a>
+
+          <!-- Central Image -->
+          <div class="center-image">
             <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_Tom_and_Jerry_characters">
-            <img src="img/PictureForTom&JerryFriends.jpg" alt="Tom and Jerry with their animated friends, showcasing other characters from the classic cartoon series like Spike the dog and Tuffy the baby mouse">
-            <p class="caption">Tom and Jerry as friends</p>
-        </div>
-    
-        <a target="_blank" href="https://www.amazon.ca/tom-jerry-tshirt/s?k=tom+and+jerry+tshirt" class="logo right">
-          <img src="img/PictureForTom&JerryTshirt.jpg" alt="Tom and Jerry graphic t-shirt featuring an image of the animated duo in a humorous pose">
-        </a>
-      </div>
-    </section>
+              <img src="img/PictureForTom&JerryFriends.jpg" alt="Tom and Jerry with their friends">
+              <p class="caption">Tom and Jerry as friends</p>
+            </a>
+          </div>
 
-    <!-- Characteristics Section -->
-    <section id="characteristics">
-      <h2>Characteristics</h2>
-      <div class="container">
-        <div class="left">
-          <h2>Tom's Characteristics</h2>
-          <ol>
-            <li>Always seeking new challenges.</li>
-            <li>Stands by loved ones.</li>
-            <li>Clever and humorous.</li>
-          </ol>
+          <!-- Right logo/link -->
+          <a target="_blank" href="https://www.amazon.ca/tom-jerry-tshirt/s?k=tom+and+jerry+tshirt" class="logo right">
+            <img src="img/PictureForTom&JerryTshirt.jpg" alt="Tom and Jerry T-shirt">
+          </a>
         </div>
-        <div class="right">
-          <h2>Jerry's Characteristics</h2>
-          <ol>
-            <li>Laid-back, neurotic, humorous.</li>
-            <li>Complex relationships.</li>
-            <li>Comedian navigating life's quirks.</li>
-          </ol>
+      </section>
+
+      <!-- Characteristics Section -->
+      <section id="characteristics">
+        <div class="container">
+          <div class="left">
+            <h2>Tom's Characteristics</h2>
+            <ol>
+              <li>Always seeking new challenges.</li>
+              <li>Stands by loved ones.</li>
+              <li>Clever and humorous.</li>
+            </ol>
+          </div>
+          <div class="right">
+            <h2>Jerry's Characteristics</h2>
+            <ol>
+              <li>Laid-back, neurotic, humorous.</li>
+              <li>Complex relationships.</li>
+              <li>Comedian navigating life's quirks.</li>
+            </ol>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer element -->
     <footer>
-       <p>This site was created during a <a target="_blank" href="https://www.skillshare.com/en/classes/hand-code-your-first-website-html-css-basics/1575146775">HTML + CSS class by Super Awesome Rich</a> classic 
-           &copy; Elima Tripathy ( Evaan Dash's Love for Tom and Jerry)
-       </p>
-     </footer>
+      <p>This site was created during a <a target="_blank" href="https://www.skillshare.com/en/classes/hand-code-your-first-website-html-css-basics/1575146775">HTML + CSS class by Super Awesome Rich</a> classic 
+         &copy; Elima Tripathy ( Evaan Dash's Love for Tom and Jerry)
+      </p>
+    </footer>
   </body>
 </html>
