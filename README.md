@@ -25,7 +25,7 @@ I wanted to keep it clean and simple to make sure my son’s 4-year-old friends 
 
 ### Wireframes
 - **Desktop View**: The desktop version has a full-width header image, followed by a section for the description, video, and clickable links/icons placed in a grid layout.
-- **Mobile View**: The mobile view is a stacked layout with elements rearranged vertically for a smooth, responsive experience.
+- **Mobile View**: Needs to be implemented 
 
 ## Current Features
 
@@ -72,7 +72,7 @@ To deploy the website:
 ## Acknowledgements and Credits
 
 - **Skillshare Course**: This website was built as part of my learning journey from the Skillshare course ["Hand-Code Your First Website: HTML & CSS Basics"](https://www.skillshare.com/en/classes/hand-code-your-first-website-html-css-basics/1575146775/projects?via=member-home-EnrolledClassesLessonsSection). Thanks to the instructors for making learning fun and accessible.
-- **Onoyonika**: For reviewing the code and providing helpful suggestions.
+- **Oyonika**: For reviewing the code and providing helpful suggestions.
 - **Tom and Jerry**: For being an endless source of joy and inspiration.
 
 ## License
