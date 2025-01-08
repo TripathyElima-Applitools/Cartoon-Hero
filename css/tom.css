@@ -153,6 +153,47 @@ html, body {
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scrolling */
 }
+/* Make the navbar fixed at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background for the navbar */
+  color: white;
+  padding: 10px 0;
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  box-shadow: 0 4px 2px -2px gray; /* Optional: adds shadow to navbar */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul li a:hover {
+  color: #FFD700; /* Change color when hovered */
+}
+
+/* Add padding to the body so content isn't hidden under the fixed navbar */
+body {
+  padding-top: 60px; /* Adjust the value based on the height of your navbar */
+}
+
 
 
 
