@@ -5,7 +5,10 @@
 This website is a fun tribute to my 4-year-old son's favorite cartoon, **Tom & Jerry**. I created this site to showcase the playful and humorous nature of the show through fun design and interactive elements. The project was an excellent opportunity for me to learn the basics of web development using **HTML** and **CSS** from a Skillshare class, and I aimed to combine my son's love for Tom & Jerry with my newfound coding skills.
 
 Website Link https://tripathyelima-applitools.github.io/Cartoon-Hero/index.html
-Wireframe Design 
+
+![Wireframe Design](https://github.com/TripathyElima-Applitools/Cartoon-Hero/blob/main/img/WireframeDesign.jpg)
+
+
 
 
 The website includes:
