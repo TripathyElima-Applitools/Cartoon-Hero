@@ -1,4 +1,57 @@
 // script.js
+// Get the buttons, and result display elements
+const userChoiceDisplay = document.getElementById('user-choice');
+const computerChoiceDisplay = document.getElementById('computer-choice');
+const resultDisplay = document.getElementById('result');
+
+const rockButton = document.getElementById('rock');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
+
+// Possible choices for the computer
+const choices = ['Rock', 'Paper', 'Scissors'];
+
+// Event listeners for user's choices
+rockButton.addEventListener('click', () => playGame('Rock'));
+paperButton.addEventListener('click', () => playGame('Paper'));
+scissorsButton.addEventListener('click', () => playGame('Scissors'));
+
+// Function to play the game
+function playGame(userChoice) {
+  // Display the user's choice
+  userChoiceDisplay.textContent = `You chose: ${userChoice}`;
+
+  // Get the computer's random choice
+  const computerChoice = getComputerChoice();
+  computerChoiceDisplay.textContent = `Computer chose: ${computerChoice}`;
+
+  // Determine the result of the game
+  const result = determineWinner(userChoice, computerChoice);
+  resultDisplay.textContent = result;
+}
+
+// Function to randomly choose for the computer
+function getComputerChoice() {
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+}
+
+// Function to determine the winner
+function determineWinner(userChoice, computerChoice) {
+  if (userChoice === computerChoice) {
+    return 'It\'s a tie!';
+  }
+
+  if (
+    (userChoice === 'Rock' && computerChoice === 'Scissors') ||
+    (userChoice === 'Scissors' && computerChoice === 'Paper') ||
+    (userChoice === 'Paper' && computerChoice === 'Rock')
+  ) {
+    return 'You win!';
+  } else {
+    return 'Computer wins!';
+  }
+}
 
 // Handle form submission when the user submits the comment form
 document.getElementById('comment-form').addEventListener('submit', function(e) {
