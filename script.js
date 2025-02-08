@@ -111,3 +111,19 @@ function loadComments() {
 
 // Load comments when the page loads for the first time
 window.onload = loadComments; // Call the loadComments function when the window finishes loading
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.querySelector('nav ul');
+const navLinks = document.querySelectorAll('nav ul li a'); // Select all links in the nav
+
+menuToggle.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
+
+// Close the menu when a link is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navList.classList.remove('active'); // Close the menu
+  });
+});
+

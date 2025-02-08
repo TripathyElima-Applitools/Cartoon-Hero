@@ -164,6 +164,7 @@ html {
 }
 
 /* Navigation Bar Styling */
+/* Navigation Bar Styling */
 nav {
   position: fixed; /* Fix the navigation bar at the top */
   top: 0; /* Position it at the top */
@@ -174,6 +175,7 @@ nav {
   z-index: 1000; /* Ensure it stays above other content */
 }
 
+/* Default styling for the navigation */
 nav ul {
   list-style-type: none; /* Remove list bullets */
   margin: 0; /* Remove default margin */
@@ -199,6 +201,54 @@ nav ul li a:hover {
   background-color: #483a94; /* Set background color on hover */
   border-radius: 5px; /* Round corners on hover */
 }
+
+/* Hide the menu links initially for smaller screens */
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav .menu-toggle {
+  display: none;
+}
+
+/* Media Queries for small screens */
+@media screen and (max-width: 768px) {
+  /* Stack the navigation items vertically */
+  nav ul {
+    display: none; /* Hide the menu on small screens */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Show a hamburger icon for small screens */
+  nav .menu-toggle {
+    display: block; /* Show the hamburger icon */
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  nav ul.active {
+    display: flex; /* Display the menu when the hamburger icon is clicked */
+  }
+
+  nav ul li a {
+    padding: 10px; /* Add padding to menu items */
+    font-size: 20px;
+  }
+}
+
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
@@ -443,4 +493,3 @@ nav ul li a:hover {
     font-size: 20px; /* Reduce font size for smaller screens */
   }
 }
-
