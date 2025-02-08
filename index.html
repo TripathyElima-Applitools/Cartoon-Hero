@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom and Jerry</title>
     <!-- webpage title -->
     <link rel="icon" href="img/PictureForTom&Jerry.jpg" alt="Tom and Jerry Icon">
@@ -19,6 +21,8 @@
         <li><a href="#about">About Tom and Jerry</a></li>
         <li><a href="#video">Tom and Jerry Funny Moment</a></li>
         <li><a href="#characteristics">Characteristics</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#game">Play Game</a></li> <!-- Added Game Section link -->
       </ul>
     </nav>
 
@@ -90,13 +94,54 @@
           </div>
         </div>
       </section>
+
+      <!-- Rock, Paper, Scissors Game Section -->
+      <section id="game">
+        <h2>Rock, Paper, Scissors Game</h2>
+        <p>Choose Rock, Paper, or Scissors, and let's see who wins!</p>
+        <div id="game-container">
+          <div class="choices">
+            <button class="choice" id="rock">Rock</button>
+            <button class="choice" id="paper">Paper</button>
+            <button class="choice" id="scissors">Scissors</button>
+          </div>
+          <p id="user-choice"></p>
+          <p id="computer-choice"></p>
+          <p id="result"></p>
+        </div>
+      </section>
+
+      <!-- Comment Section -->
+      <section id="comments">
+        <h2>Leave a Comment</h2>
+
+        <!-- Comment Form -->
+        <form id="comment-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+          <label for="comment">Your Comment:</label>
+          <textarea id="comment" name="comment" required placeholder="Write your comment here..."></textarea>
+
+          <button type="submit">Submit Comment</button>
+        </form>
+
+        <!-- Displaying Comments -->
+        <div id="comment-display">
+          <!-- Comments will be displayed here -->
+        </div>
+      </section>
+
     </main>
 
     <!-- Footer element -->
     <footer>
-      <p>This site was created during a <a target="_blank" href="https://www.skillshare.com/en/classes/hand-code-your-first-website-html-css-basics/1575146775">HTML + CSS class by Super Awesome Rich</a> classic 
-         &copy; Elima Tripathy ( Evaan Dash's Love for Tom and Jerry)
+      <p>This site was created during a <a target="_blank" href="https://www.skillshare.com/en/classes/hand-code-your-first-website-html-css-basics/1575146775">HTML + CSS class by Super Awesome Rich</a> classic
+        &copy; Elima Tripathy ( Evaan Dash's Love for Tom and Jerry)
       </p>
     </footer>
+
+    <!-- Link to the external script -->
+    <script src="script.js"></script>
   </body>
 </html>

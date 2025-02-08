@@ -1,53 +1,53 @@
-body{
+/* General Styles */
+body {
   margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #f4f4f9;
-  margin: 0;
   padding: 0;
 }
-header{
+
+header {
   background-color: #35d1cc;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-header h1{
+
+header h1 {
   color: rgb(134, 46, 46);
   font-size: 50px;
 }
-header img{
+
+header img {
   border-radius: 170px;
   width: 300px;
-  border: 20px solid white 
+  border: 20px solid white;
 }
-.tom {
-  float: right;
-  width:300px;
-  height:300px;
+
+.tom, .jerry {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
-.jerry {
-  float: left;
-  width:300px;
-  height:300px;
-}
+
 h1, h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-h1, h2{
   font-size: 30px;
   color: rgb(134, 46, 46);
   margin: 40px 0 10px;
 }
-main{
+
+main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
+
 .video-container {
   margin: 50px auto;
   max-width: 640px;
@@ -55,134 +55,317 @@ main{
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 iframe {
   width: 100%;
   height: 360px;
   border: none;
   border-radius: 15px;
 }
+
 p.caption {
   color: #999999;
   font-style: italic;
   margin-top: 0;
 }
+
+/* Flexbox layout for the characteristics */
 .container {
   display: flex;
   justify-content: space-between;
   width: 100%;
- /* You can adjust the width */
 }
+
 .left, .right {
   width: 45%;
- /* Adjust width as needed */
 }
+
 ol {
   padding-left: 20px;
 }
-a{
-  color:#35d1cc;
+
+a {
+  color: #35d1cc;
 }
-a:hover{
+
+a:hover {
   color: white;
   background-color: #483a94;
 }
-footer{
+
+footer {
   width: 100%;
   background-color: #35d1cc;
   text-align: center;
-  color: rgb(134, 46, 46);;
-  padding: 50px; /* Adjust padding as needed */
-  position: relative; /* This ensures the footer stays at the bottom if needed */
-  bottom: 0; /* Stick it to the bottom of the page if necessary */
+  color: rgb(134, 46, 46);
+  padding: 50px;
+  position: relative;
+  bottom: 0;
 }
-footer p{
-  margin: 0
+
+footer p {
+  margin: 0;
 }
+
 footer a {
-  color: rgb(134, 46, 46);;
+  color: rgb(134, 46, 46);
 }
-footer a hover{
+
+footer a:hover {
   opacity: 5;
   background-color: transparent;
-
 }
-p.caption
-{
-  color: #999999;
-  font-style: italic;
-  margin-top: 0;
-} 
-/* Flex container to align items horizontally */
+
+/* Flex container to align items horizontally for images */
 .image-container {
   display: flex;
-  align-items: center;  /* Vertically center the items (logos and image) */
-  justify-content: center; /* Horizontally center the container */
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
-  height: 50vh;  /* Full viewport height */
+  height: 50vh;
 }
-/* Styling for logos */
+
 .logo {
   display: block;
   cursor: pointer;
-  top: 60%;  /* Vertically center the logos */
+  top: 60%;
+}
 
-}
-/* Position left logo to the left */
+/* Position left and right logos */
 .left {
-  margin-right: 40px;  /* Add space between left logo and the central image */
+  margin-right: 40px;
 }
-/* Position right logo to the right */
+
 .right {
-  margin-left: 40px;  /* Add space between right logo and the central image */
+  margin-left: 40px;
 }
+
 .logo img {
   border-radius: 170px;
   width: 300px;
-  border: 20px solid white 
+  border: 20px solid white;
 }
-main img{
+
+main img {
   border-radius: 170px;
   width: 300px;
-  border: 20px solid white 
+  border: 20px solid white;
 }
+
+/* Remove horizontal overflow */
 html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Hide horizontal scrolling */
-}
-/* Navigation Bar Styling */
-nav {
-  position: fixed; /* Fix the nav bar to the top of the screen */
-  top: 0; /* Ensure it stays at the top */
-  left: 0; /* Align to the left side */
-  width: 100%; /* Make it full width */
-  background-color: #333; /* Dark background */
-  padding: 10px 0; /* Some padding to give it space */
-  z-index: 1000; /* Ensure it stays on top of other content */
-}
-/* Navigation links styling */
-nav ul {
-  list-style-type: none; /* Remove default list styling */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Align links horizontally */
-  justify-content: center; /* Center align the navigation items */
-}
-nav ul li {
-  margin: 0 20px; /* Spacing between menu items */
-}
-nav ul li a {
-  color: white; /* White text color */
-  text-decoration: none; /* Remove underlines */
-  font-size: 18px; /* Font size for the nav items */
-  padding: 5px 15px; /* Padding for clickable area */
-  display: inline-block; /* Make sure the anchor is an inline-block element */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
-nav ul li a:hover {
-  background-color: #483a94; /* Darken the background color on hover */
-  border-radius: 5px; /* Optional: Rounded corners on hover */
+  overflow-x: hidden;
 }
 
+/* Navigation Bar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 15px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #483a94;
+  border-radius: 5px;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  /* Stack Tom and Jerry images vertically on smaller screens */
+  .tom, .jerry {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Make the characteristics section stack vertically */
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust the video iframe for small screens */
+  iframe {
+    height: 240px;
+  }
+
+  /* Make logos stack vertically in the image container */
+  .image-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    width: 80%;
+  }
+
+  /* Adjust footer padding on smaller screens */
+  footer {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  /* Adjust font size in the main content */
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  /* Further adjustments for logos and images */
+  .logo img {
+    width: 70%;
+  }
+
+  .video-container {
+    margin: 20px auto;
+  }
+}
+/* Comment Section Styles */
+#comments {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#comments h2 {
+  font-size: 30px;
+  color: rgb(134, 46, 46);
+  margin-bottom: 20px;
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#comment-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#comment-form input,
+#comment-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%; /* Adjust the width here */
+  max-width: 500px; /* Optional: Limits the maximum width */
+  margin-left: auto; /* Centers the input */
+  margin-right: auto; /* Centers the input */
+}
+
+#comment-form button {
+  padding: 10px 20px;
+  background-color: #35d1cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#comment-form button:hover {
+  background-color: #483a94;
+}
+
+#comment-display {
+  margin-top: 30px;
+}
+
+.comment {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.comment h3 {
+  font-size: 18px;
+  color: #35d1cc;
+}
+
+.comment p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Adjust comment section layout for smaller screens */
+@media screen and (max-width: 768px) {
+  #comments {
+    padding: 20px;
+  }
+
+  #comments h2 {
+    font-size: 26px;
+  }
+
+  #comment-form input,
+  #comment-form textarea {
+    font-size: 14px;
+  }
+
+  #comment-form button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .comment h3 {
+    font-size: 16px;
+  }
+
+  .comment p {
+    font-size: 14px;
+  }
+}
 
