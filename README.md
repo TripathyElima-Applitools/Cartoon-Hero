@@ -4,18 +4,17 @@
 
 This website is a fun tribute to my 4-year-old son's favorite cartoon, **Tom & Jerry**. I created this site to showcase the playful and humorous nature of the show through fun design and interactive elements. The project was an excellent opportunity for me to learn the basics of web development using **HTML** and **CSS** from a Skillshare class, and I aimed to combine my son's love for Tom & Jerry with my newfound coding skills.
 
-Website Link https://tripathyelima-applitools.github.io/Cartoon-Hero/index.html
+Website Link: [Cartoon Hero Website](https://tripathyelima-applitools.github.io/Cartoon-Hero/index.html)
 
 ![Wireframe Design](https://github.com/TripathyElima-Applitools/Cartoon-Hero/blob/main/img/WireframeDesign.jpg)
-
-
-
 
 The website includes:
 - **Header images** featuring Tom and Jerry.
 - A **funny description** written from my son’s perspective about Tom and Jerry.
 - A **short Tom & Jerry video** to relax and make your day more enjoyable.
 - **Clickable icons** that redirect users to pages where they can buy Tom & Jerry-themed merchandise (e.g., T-shirts, stickers) on Amazon or learn more about the show on Wikipedia.
+- **Interactive mini-games and quizzes** about Tom and Jerry to engage visitors in a fun and educational way.
+- A **comments section** where visitors can share their favorite Tom & Jerry moments.
 
 ## Technologies Used
 
@@ -32,7 +31,7 @@ I wanted to keep it clean and simple to make sure my son’s 4-year-old friends 
 
 ### Wireframes
 - **Desktop View**: The desktop version has a full-width header image, followed by a section for the description, video, and clickable links/icons placed in a grid layout.
-- **Mobile View**: Needs to be implemented 
+- **Mobile View**: The mobile version has been improved for better responsiveness, ensuring a smooth experience for users on different devices.
 
 ## Current Features
 
@@ -40,6 +39,8 @@ I wanted to keep it clean and simple to make sure my son’s 4-year-old friends 
 - **Funny Description**: A short description written from my son's perspective about the show, bringing a personal touch to the website.
 - **Tom & Jerry Video**: Embedded a short video clip of Tom and Jerry for a relaxed viewing experience.
 - **Clickable Icons**: Redirects to Amazon for Tom & Jerry merchandise (T-shirts, stickers) and Wikipedia for more information on the show.
+- **Interactive Mini-Games and Quizzes**: Added fun mini-games and quizzes that challenge users' knowledge about Tom and Jerry, increasing engagement with the site.
+- **User Comments Section**: A new section where visitors can leave comments and share their favorite Tom & Jerry moments, creating a more interactive and community-driven experience.
 
 ## Bugs Encountered and Fixed
 
@@ -52,10 +53,8 @@ I was able to troubleshoot and resolve these issues with a combination of learni
 
 ## Features to be Implemented in Future Releases
 
-- **Additional Interactive Features**: Add more interactive features such as mini-games or quizzes about Tom and Jerry.
-- **Responsive Improvements**: Fine-tune the responsiveness of the site for all device sizes.
-- **User Comments Section**: Implement a section where visitors can leave comments or share their favorite Tom & Jerry moments.
-
+- **Advanced Mobile Optimization**: Further optimize the mobile experience to improve usability on smaller screens.
+  
 ## Deployment Steps
 
 To deploy the website:
