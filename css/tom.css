@@ -264,7 +264,6 @@ nav .menu-toggle {
   }
 }
 
-
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
   header h1 {
@@ -483,7 +482,9 @@ nav .menu-toggle {
   transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
-#user-choice, #computer-choice, #result {
+#user-choice,
+#computer-choice,
+#result {
   font-size: 24px; /* Set font size for the result text */
   margin-top: 20px; /* Add space at the top */
   color: #333; /* Set text color */
@@ -504,7 +505,9 @@ nav .menu-toggle {
     padding: 10px 20px; /* Adjust button padding */
   }
 
-  #user-choice, #computer-choice, #result {
+  #user-choice,
+  #computer-choice,
+  #result {
     font-size: 20px; /* Reduce font size for smaller screens */
   }
 }
