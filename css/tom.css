@@ -72,6 +72,7 @@ p.caption {
 }
 
 /* Flexbox layout for the characteristics section */
+/* Flexbox layout for the characteristics section */
 .container {
   display: flex; /* Use flexbox layout */
   justify-content: space-between; /* Space out items evenly */
@@ -85,6 +86,20 @@ p.caption {
 
 ol {
   padding-left: 20px; /* Add left padding to ordered list */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the items */
+    gap: 20px; /* Add space between items */
+  }
+
+  .left,
+  .right {
+    width: 80%; /* Set width to 80% on mobile */
+    margin-bottom: 20px; /* Add bottom margin to create space */
+  }
 }
 
 a {
